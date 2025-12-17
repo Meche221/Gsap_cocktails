@@ -1,16 +1,143 @@
-# React + Vite
+# 🍸 Cocktail Menu Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated cocktail menu website built with **React + Vite** and styled using **Tailwind CSS**. The site features a smooth slider-style cocktail menu, interactive navigation, and clean UI animations for an engaging user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* ⚛️ Built with **React (Vite)** for fast performance
+* 🎨 Styled using **Tailwind CSS**
+* 🧭 Interactive cocktail slider with previous/next navigation
+* 🖱️ Clickable tabs to switch between cocktails
+* 📱 Responsive design (desktop & mobile friendly)
+* ✨ Smooth UI animations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React**
+* **Vite**
+* **Tailwind CSS**
+* **JavaScript (ES6+)**
+
+---
+
+## 📂 Project Structure
+
+```
+├── public/
+│   └── images/            # Static images (cocktails, arrows, leaves)
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── constants/         # Cocktail data
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+
+2. **Navigate to the project folder**
+
+   ```bash
+   cd your-repo-name
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 🖼️ Image Handling
+
+Cocktail images are stored in the `public/images` directory and referenced like this:
+
+```jsx
+<img src={currentCocktail.image} alt={currentCocktail.name} />
+```
+
+Example data object:
+
+```js
+{
+  id: 1,
+  name: "Mojito",
+  image: "/images/mojito.png"
+}
+```
+
+---
+
+## ♿ Accessibility
+
+* Uses semantic HTML elements
+* `aria-label` and `aria-labelledby` for navigation
+* Screen-reader–only headings for better accessibility
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📌 Future Improvements
+
+* Add backend / CMS for dynamic cocktail data
+* Add dark/light theme toggle
+* Improve animations with GSAP
+* Add filtering by category or ingredients
+
+---
+
+## 👤 Author
+
+**Binay Meche**
+Frontend Developer in progress 🚀
+Learning React, JavaScript, and modern web development
+
+---
+
+## 📄 License
+
+This project is for learning and personal use.
+
+---
+
+⭐ If you like this project, feel free to star the repo!
